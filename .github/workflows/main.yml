@@ -3,7 +3,7 @@ name: Send GET request
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   send-request:
