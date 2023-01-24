@@ -1,0 +1,15 @@
+name: Send GET request
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  send-request:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Send GET request
+      run: curl -X GET https://webhook.site/56d08281-d1df-482d-ae97-8631796e2170
